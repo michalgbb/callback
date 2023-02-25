@@ -4,9 +4,9 @@ const multiplay = (param) => param * 2;
 const add = param => param + 20;
 const odd = param => param - 1;
 
-const zmienTablice = (pierwsza, callback) => {
-    for(let i=0; i < pierwsza.length; i++) {
-        pierwsza[i] = callback(pierwsza[i]);
+const zmienTablice = (array, callback) => {
+    for(let i=0; i < array.length; i++) {
+    array[i] = callback(array[i]);
     }
 }
 
